@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* CSS Variables for colors */
+
+
+:root {
+  /* Light mode: soft background, dark text, vibrant accent */
+  --color-background: #F8FAFC; /* light gray-blue */
+  --color-text-primary: #1E293B; /* slate-800 */
+  --color-accent: #2563EB; /* blue-600 */
+  --nav-height: 72px; /* default navbar height; updated dynamically */
+}
+
+/* ensure browser-native scroll-to-anchor accounts for fixed header */
+html {
+  scroll-padding-top: var(--nav-height);
+}
+
+.dark {
+  /* Dark mode: deep background, light text, vivid accent */
+  --color-background: #0F172A; /* slate-900 */
+  --color-text-primary: #F1F5F9; /* slate-100 */
+  --color-accent: #818CF8; /* indigo-400 */
+}
+
+/* Utility classes */
+.bg-background {
+  background-color: var(--color-background);
+}
+.text-textPrimary {
+  color: var(--color-text-primary);
+}
+.text-accent {
+  color: var(--color-accent);
+}
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+/* Accessibility: respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

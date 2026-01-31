@@ -1,18 +1,28 @@
 import React from "react";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Skills from "./pages/Skills";
+import Navbar from "./components/layout/Navbar";
+import Hero from "./components/sections/Hero";
+import About from "./components/sections/About";
+import Skills from "./components/sections/skills";
+import Projects from "./components/sections/Projects";
+import Experience from "./components/sections/Experience";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
 
-function App() {
+const App = () => {
   return (
-    <div>
+    <div className="bg-background text-textPrimary font-sans">
       <Navbar />
-      <Home />
-      <About />
-      <Skills />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Contact />
+      </main>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
