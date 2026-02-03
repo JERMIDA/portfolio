@@ -1,4 +1,6 @@
+
 import React from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const navLinks = [
@@ -37,28 +39,31 @@ const Footer = () => {
         </ul>
 
         {/* Social Links */}
-        <div className="flex gap-6 text-sm mt-4 md:mt-0">
+        <div className="flex gap-6 text-lg mt-4 md:mt-0">
           <a
             href="https://github.com/JERMIDA"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200"
+            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200 flex items-center"
+            aria-label="GitHub"
           >
-            GitHub
+            <FaGithub />
           </a>
           <a
             href="https://linkedin.com/in/letmeda"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200"
+            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200 flex items-center"
+            aria-label="LinkedIn"
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
           <a
             href="mailto:jeremydamena98@gmail.com"
-            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200"
+            className="hover:text-accent hover:bg-accent/10 focus:bg-accent/10 focus:outline-none focus:ring-2 focus:ring-accent rounded px-2 py-1 transition-colors duration-200 flex items-center"
+            aria-label="Email"
           >
-            Email
+            <FaEnvelope />
           </a>
         </div>
       </div>

@@ -3,7 +3,6 @@ import { motion as Motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import Button from "../ui/Button";
 
-// Requires EmailJS: set VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY in project root .env
 
 const Contact = () => {
   const formRef = useRef(null);
@@ -13,9 +12,9 @@ const Contact = () => {
     e.preventDefault();
     setStatus("sending");
 
-    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID || "YOUR_SERVICE_ID";
-    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "YOUR_TEMPLATE_ID";
-    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "YOUR_PUBLIC_KEY";
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
     emailjs
       .sendForm(serviceId, templateId, formRef.current, publicKey)
@@ -103,7 +102,7 @@ const Contact = () => {
       </Motion.form>
 
       {/* Social Links */}
-      <Motion.div
+      {/* <Motion.div
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
@@ -132,7 +131,7 @@ const Contact = () => {
         >
           Email
         </a>
-      </Motion.div>
+      </Motion.div> */}
     </section>
   );
 };

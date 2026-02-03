@@ -28,7 +28,7 @@ const Hero = () => {
             style={{ filter: 'blur(8px)' }}
           />
           <Motion.img
-            src="./src/assets/lemi.jpg"
+            src="/assets/hero-pic.jpg"
             alt="Profile"
             className="relative z-10 w-[170px] h-[170px] md:w-[200px] md:h-[200px] rounded-full border-4 border-white shadow-2xl object-cover object-top bg-white"
             style={{ objectPosition: 'top center' }}

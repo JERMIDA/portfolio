@@ -49,6 +49,13 @@ const Projects = () => {
               transition={{ duration: 0.3, ease: "easeOut" }}
             >
               <Card>
+                {project.screenshot && (
+                  <img
+                    src={project.screenshot}
+                    alt={project.title + " screenshot"}
+                    className="w-full h-48 object-cover rounded-md mb-4 border border-accent/20 shadow"
+                  />
+                )}
                 <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
                 <p className="text-sm mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2 mb-4">

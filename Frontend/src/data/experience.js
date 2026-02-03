@@ -2,29 +2,29 @@ const experience = [
   {
     id: 1,
     role: "Software Engineering Intern",
-    company: "Tech Solutions Inc.",
-    period: "Jun 2024 – Sep 2024",
+    company: "Debo AI plc",
+    period: "Mar 2024 – Jun 2024",
     description:
-      "Worked on backend APIs with Node.js and Express, optimized database queries in MongoDB, and collaborated with frontend team to deliver responsive features.",
-    tech: ["Node.js", "Express", "MongoDB"],
+      "Worked as a Web Developer at Debo Engineering, building and maintaining web applications using the MERN stack (Mysql, Express.js, React.js, and Node.js). Developed responsive user interfaces, optimized backend APIs, and collaborated with the team to deliver efficient, scalable web solutions",
+    tech: [ "React","Node.js", "Express", "Mysql", "JWT",],
   },
   {
     id: 2,
     role: "Freelance Web Developer",
     company: "Self-employed",
-    period: "2023 – Present",
+    period: "2023– Present",
     description:
       "Built responsive websites for small businesses using React and Tailwind CSS. Focused on accessibility, performance, and clean UI design.",
-    tech: ["React", "Tailwind CSS"],
+    tech: ["React",  "Express", "Mysql","Tailwind CSS"],
   },
   {
     id: 3,
     role: "Student Projects",
     company: "University",
-    period: "2022 – Present",
+    period: "2023 – Present",
     description:
-      "Developed multiple MERN stack projects including an e-commerce app, chat application, and portfolio site. Gained experience in GitHub collaboration and deployment.",
-    tech: ["React", "Node.js", "MongoDB", "GitHub"],
+      "Developed  MERN stack projects including an Clearance management system, Job application sytem, and Blog apps. Gained experience in GitHub collaboration and deployment.",
+    tech: ["React", "Node.js", "MongoDB", "Vite","GitHub","Tailwind CSS"],
   },
 ];
 
