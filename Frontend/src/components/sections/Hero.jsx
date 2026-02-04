@@ -66,7 +66,7 @@ const Hero = () => {
             ]}
             typeSpeed={50}
             backSpeed={30}
-            backDelay={1500}
+            backDelay={1400}
             loop
           />
         </span>

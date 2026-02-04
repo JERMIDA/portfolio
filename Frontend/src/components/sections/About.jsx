@@ -46,6 +46,16 @@ const About = () => {
                 software engineering role where I can continue growing and
                 contributing to impactful projects.
               </p>
+
+              {/* Resume Button at the bottom */}
+              <a
+                href="/assets/lemi_cv_latest.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block mt-8 px-6 py-2 bg-accent text-white font-semibold rounded-lg shadow hover:bg-accent/90 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-accent"
+              >
+                View My Resume
+              </a>
             </div>
           </div>
         </Card>
