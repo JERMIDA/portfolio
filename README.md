@@ -1,5 +1,4 @@
-
-# Lemi Damena's Portfolio
+#my Portfolio
 
 Live: [https://portfolio-lemi.vercel.app/](https://portfolio-lemi.vercel.app/)
 
