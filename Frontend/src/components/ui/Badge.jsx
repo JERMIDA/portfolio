@@ -8,7 +8,8 @@ const Badge = ({ children, className }) => {
   return (
     <span
       className={clsx(
-        "inline-block px-3 py-1 rounded-md bg-accent/10 text-accent text-sm font-medium",
+        // Responsive: smaller padding and font on mobile
+        "inline-block px-2 py-0.5 sm:px-3 sm:py-1 rounded-md bg-accent/10 text-accent text-xs sm:text-sm font-medium",
         className
       )}
     >

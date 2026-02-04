@@ -25,7 +25,8 @@ const Button = ({
   ...props
 }) => {
   const baseStyles =
-    "inline-flex items-center justify-center rounded-md font-medium px-5 py-2 focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200 ease-out disabled:opacity-60 disabled:cursor-not-allowed shadow-subtle";
+    // Responsive: smaller padding and font on mobile
+    "inline-flex items-center justify-center rounded-md font-medium px-3 py-1.5 text-sm sm:px-5 sm:py-2 sm:text-base focus:outline-none focus:ring-2 focus:ring-offset-2 transition-colors duration-200 ease-out disabled:opacity-60 disabled:cursor-not-allowed shadow-subtle";
 
   const variants = {
     primary:
